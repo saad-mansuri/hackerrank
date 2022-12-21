@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutation Observer</title>
+    <style>
+        #elem{
+            display: flex;
+        }
+        .divs{
+            width: 100px;
+            height: 100px;
+            text-align: center; 
+            background-color: #ccc;
+            margin: 10px;
+        }
+        #innerChild{
+            background-color: grey;
+        }
+        .hello{
+            background-color: red;
+            color: white;
+        }
+        .hello1{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div id="demo"></div> -->
+    <div id="elem">
+        <div class="divs" contenteditable id="div1">First Div</div>
+        <div class="divs" contenteditable id="div2">Second Div</div>
+        <div class="divs" contenteditable id="div3">Third Div</div>
+        <div class="divs" contenteditable id="innerChild">
+            <div class="child">InnerChild</div>
+        </div>
+    </div>
+    <button id="deleteDiv" onclick="deleteDiv()">Delete Div</button>
+    <button id="updateContent" onclick="updateContent()" >Update Div</button>
+    <button onclick="addAttr()" >Add Attribute on Div</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
