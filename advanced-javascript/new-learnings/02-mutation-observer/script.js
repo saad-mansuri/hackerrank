@@ -4,7 +4,8 @@ let observer = new MutationObserver((data)=>{
     console.log(data);
     // console.log(data[0].removedNodes);
 })
-observer.observe(elem,{
+console.log(observer);
+observer.observe(element,{
     childList : true,
     subtree:true,   
     attributeOldValue:true,
@@ -12,7 +13,7 @@ observer.observe(elem,{
 })
 
 function deleteDiv(){
-    document.getElementById('elem').children[0].remove()
+    document.getElementById('element').children[0].remove()
 }    
 
 function updateContent(e){  
