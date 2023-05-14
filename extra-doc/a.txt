@@ -1,0 +1,17 @@
+html4 vs html5 
+
+display : swiper
+
+flex-grow
+
+opacity vs overflowhidden
+
+display block vs display inlineblock
+
+
+
+types of javascript function 
+	- anonymous function 
+	- immediately invoked function 
+	- function expression
+	- arrow function 

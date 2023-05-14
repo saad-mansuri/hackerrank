@@ -1,0 +1,7 @@
+		APIs
+
+https://dummy.restapiexample.com/	
+
+https://gorest.co.in/
+
+https://reqres.in/

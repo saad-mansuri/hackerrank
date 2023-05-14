@@ -1,0 +1,12 @@
+Mailhet Markup Language 
+
+run on node version : 10.16.0
+restart the pc if it show, internal-external command.
+
+MJML command for creating html file
+mjml -r index.mjml -o index.html
+
+
+https://unpkg.com/browse/mjml-hero@4.10.1/README.md
+
+https://openbase.com/js/mjml-wrapper/versions

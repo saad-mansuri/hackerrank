@@ -1,0 +1,42 @@
+For intalling gulp and their commands : 
+
+- npm init 
+- npm install gulp --save-dev
+
+
+
+const { src, series, parallel, dest } = require('gulp')
+var gulp = require('gulp')
+var sass = require('gulp-sass')(require('sass'))
+var watch = require('gulp-watch')
+var syncBrowser = require('browser-sync').create()
+var uglify = require('gulp-uglify')
+// var reload = syncBrowser.reload;
+
+gulp.task('sass', function(){
+    return src('custom-assets/src/css/*.scss')
+    .pipe(sass.sync({outputStyle : 'compressed'}))
+    .pipe(gulp.dest('custom-assets/dist/css'))
+})
+
+gulp.task('minifyjs', function(){
+    return src('custom-assets/src/js/*.js')
+        .pipe(uglify())
+        .pipe(dest('custom-assets/dist/js'))
+})
+
+// gulp.task('watch', function(){
+//     gulp.watch('custom-assets/src/css/*.scss', gulp.series(['sass']))
+// })
+
+function autuload(){
+    syncBrowser.init({
+        server:{
+            baseDir : './'
+        }
+    })
+    gulp.watch('custom-assets/src/css/*.scss').on('change',  syncBrowser.reload)
+    gulp.watch('custom-assets/src/css/*.scss', gulp.series(['sass']))
+}
+
+exports.default = series(parallel(autuload))

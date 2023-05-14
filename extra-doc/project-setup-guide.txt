@@ -1,0 +1,48 @@
+####Download the attachments before reading further below
+
+----
+
+#####Database
+- Unzip it and run it in SQL editor
+- Look at wp-config.php and create a user for the same
+
+####wp-config.php
+- Simply download and put it in the root folder of your site
+- In the wp-config.php, update the database name, user and password as you have in your local database server.
+
+
+####config-local.json
+- Go to /wp-content/themes/mint/resources/assets/
+- Paste the config-local.json file
+
+####env.js
+- Go to /wp-content/themes/mint/resources/assets/scripts/
+- Paste the env.js file
+
+####Analytics
+- Download the two files name **analytics_body.blade.php** and **analytics_head.blade.php**
+- Create a folder named **analytics** under **/resources/views/partials/**
+- Copy the two files into **analytics** folder
+
+
+####Local
+- Please keep the host name as **http://mint.local**
+- Do not change the virtual host name. Let's keep it as it is.śś
+
+----
+
+####Setup Theme
+- Open Terminal, move to project folder
+- Run `git checkout develop`
+- Run `git pull origin develop`
+- Go to  **/wp-content/themes/mint** by running `cd /wp-content/themes/mint`
+- Run `npm install`
+- Run `composer install`
+
+#####YARN
+- If you do not have YARN then please install it from here
+https://classic.yarnpkg.com/en/docs/install/#windows-stable
+
+####Run Application
+- Go to  **/wp-content/themes/mint** by running `cd /wp-content/themes/mint`
+- Run `yarn start`

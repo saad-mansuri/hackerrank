@@ -1,0 +1,79 @@
+React JS Interview Questions. 
+
+1. What is ReactJS? 
+
+	- React is a javascript library.
+	- Use for frontend Development with good speed. 
+	- Develop by Facebook 
+	- Latest version : 18.2.0
+
+2. What is Component? 
+	
+	- A piece of code that can be reuse like function 
+	- but more powerful than function 
+	- 2 Types [ Functional & Class ] 
+
+3. What is Class Component? 
+	
+	- A Component that has ES6 class
+	- More Complex and powerful than functional component.
+	- Because it has a lifecycle method and state.
+	- No need to use Hooks
+
+4. What is Functional Component?
+	
+	- A component that has no ES6 class. it uses a simple JS functions
+	- Simple and need Hooks to perform states and life cycles methods.
+	- Simple to defind and recommented.
+
+5. What is State? 
+
+	- Information holder inside component and it store any data like a variable.
+	- When we update state component will render again but not in case of variable.
+	- We can not use state outside the component.
+
+6. What is Props? 
+	
+	- Share data between components 
+	- We can send data parent to child, child to parent and in sibling component.
+	- We can not change props in receiving component.
+
+7. What is Life Cycle Method?
+	
+	URL : https://www.javatpoint.com/react-component-life-cycle
+	- Some method will execute on the component mount, update and unmount we call them life cycle. 
+	- Example : 
+			- componentDidMount 
+			- componentDidUpdate
+			- shouldComponentUpdate
+
+8. What is Hooks? 
+	
+	- Function component do not have state and life cycle method. 
+	- To use state and life cycle method we can import hooks in functional component.
+	- We only can use Hooks top of the component.
+
+9. What is useState? 
+	
+	- useState() Hook allows us to state variables in our functional components.
+	- useState hook is a special function which takes the initial state as arguments and its returns it as input array.
+
+	Systax : First element is the initial state, and the second one is a function used to udpate the state.
+	let [ state, setState ] = useState()
+
+10. 
+
+
+
+
+
+
+
+
+
+
+JAVASCRIPT  : 
+
+-- JS Closure : INNER function Maintains a copy of variable of OUTER function
+
+

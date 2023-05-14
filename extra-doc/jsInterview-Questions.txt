@@ -1,0 +1,180 @@
+			JavaScript interview Questions :--- 
+
+1 - What is JavaScripts?
+2 - List down some features of JavaScript.
+3 - Who Develop JS, and What was the first name of JavaScript.
+4 - Advantages and disadvantages of JavaScript.
+
+5 - Name the types of functions available in JavaScript. 
+	one is define Function With Name 
+		function myFunction(){alert('Hello World!')}
+	another one is anonousmus function - used as direct with function keyword 
+		ex : 
+			btnSubmit.addEventListen('click', function(){alert('hello world!')})
+
+6 - What is BOM ( Browser Object Model ). 
+7. What is DOM ( Document Object Model ).
+
+8. What is the use of Historty Object?
+
+9- How to Write an comment in JavaScript.
+
+10 - What are the different data types present in JS?	
+	- Primitive 
+		1. Number
+		2. String 
+		3. BigInt 
+		4. Boolean 
+		5. Symbol 
+		6. undefine
+		7. null 	
+	- Non-Primitive
+		1. Array 
+		2. Object [ mostly known as Dictionary ]
+
+11 - What are the Operators in JavaScripts.
+12 - What is the diffrence between '==' and '==='.
+
+13 - How to create an Objects and Array in JavaScript.
+
+14 - What does the isNaN() function.
+
+15 - Diffrence Between : 
+	- Client Side JavaScript 
+	- Server side JavaScript.
+
+16 - What the Difference Between : 
+	- event.preventDefault()
+	- event.stopPropagation()
+
+17 - Diffrence Between : 
+	- undefine
+	- null
+
+18 - Diffrence Between : 
+	- View State 
+	- Session State
+
+19 - What are the popup-boxes available in JS.
+	- Alert Box
+	- Confirm Box
+	- Prompt Box
+
+20 - What is the use of window object.
+
+21 - How to submit a form using javascript by clicking a link.
+
+22 - Exception Handling in JavaScript.
+
+23 - Form Validation 
+	- Email Validaiton 
+	- Number Validation [ only numbers allowed, min-max length, blank spacing also not allowed ] 
+	- Password Validation [ Confirm Password ]
+
+24 - What is the use of 'this' Keyword. 
+25 - What is the requirements of debugging. 
+
+26 - USe of some Objects : 
+	- Math Object 
+	- Date Object 
+	- Number Object 
+	- Bolean Object 
+	- Types Object 
+	- Set Object 
+	- Map Obejct 
+	- 
+
+27 - What do you understand by Hoisting.
+28 - map() - filter() - find() ----- all methods of js 
+
+
+29 - What is the arrow function 
+39 - What is Callback() and why we used. 
+31 - What is Promise?
+32 - What is async and await.
+33 - What is Asynchronous and Synchronous.
+34 - callback vs promises vs async-await
+35 - closure in JavaScript
+
+36 - Dot and Bracket notation. 
+37 - IIFE in JS
+
+38 - Octal - Decimal - Hexa Decimal.
+
+39 - Flaoting Point Number 
+
+
+
+40 - How many types available in js to call an API. 
+	- XMLHttpRequest
+	- fetch 
+	- axios
+	- jQuery
+
+41 - Spread Operator. 
+
+42 - Destructuring an Object and Destructuring an Array.
+
+43 - Currying
+
+44 - Types of Console log()
+
+45 - ES6
+
+
+------------------------------------------------**********************************************************----------------------------------------------
+
+			Types of in-build Methods of JavaScript. 
+
+Array Methods :--
+
+1 - length() :- For Finding the length of an Array. 
+  
+2 - undefine() :- its gives undefined, variable declared but value not assign yet, so it throws the undefined variable.
+3 - null() :- null is one of the datatype of primitive and its also worked as undefined. value is null 
+
+4 - shift()	:- Remove first element form an Array.
+5 - unshift() :- Adding an element of the begin of an Array.
+
+6 - pop() : Remove last element from an Array. 
+7 - push() : Add Element in the last of an Array.
+
+8 - indexOf() : It returns the index number of Array. on which position the element belongs too. and if the value is not availabel in array it return -1.
+9 - lastindexOf() : It return only last index of arrray, if array has multiple same value so it returns only last index of value.
+
+10 - includes() : It chakes the value is availble of not in Array. it return true or false, if includes finds the value in array then it gives true or else it gives false.
+
+11 - join() : join use for joining the any array element between the array elements. and it return after joining in string, array converted into string.
+12 - reverse() : reverse is use for any array into reverse position.
+
+13 - concat() : concat use for merge two array into one. and add second array into last
+
+14 - slice() : it return new arrya with selected elements EXAMPLE : arr.slice(1,2) // output : 
+15 - 
+16 - 
+17 -
+18 - 
+19 - 
+20 - 
+
+21 - 
+22 - 
+23 - 
+24 - 
+25 - 
+26 - 
+27 - 
+28 - 
+29 -
+30 - 
+
+	
+
+
+
+
+
+
+
+
+

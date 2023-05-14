@@ -1,0 +1,108 @@
+http://first-elementor.local/wp-admin/
+USER NAME : saadmansuri
+PASSWORD : d@EewwoiDueCV)xpov
+
+
+Important links ::
+https://elementor.com/academy/get-started/#
+https://elementor.com/academy/design-layout/
+
+
+Elementor tutorials
+https://elementor.com/academy/guides-and-tutorials/
+
+
+==> Elementor [ FREE ]
+
+Sections and Columns 
+https://elementor.com/academy/sections-columns-part-2-style-options-for-sections-and-columns/
+
+Typography
+https://elementor.com/academy/typography-101-font-pairing-for-web-creators/
+
+Sticky header
+https://elementor.com/academy/create-a-color-changing-sticky-header-without-code-pro-cloud/
+
+Images Flashing
+https://elementor.com/academy/how-to-create-flashing-images/
+
+Social Icons
+https://elementor.com/academy/how-to-use-the-social-icons-widget/
+
+Create a directory using Elementor, ACF & CPT UI
+https://elementor.com/academy/create-a-directory-using-elementor-acf-cpt-ui/
+
+Maintenance Mode
+https://elementor.com/academy/how-to-create-maintenance-mode-and-coming-soon-pages/
+
+Video Play list popup
+https://elementor.com/academy/create-a-video-playlist-popup-advanced/
+
+Color Sampler
+https://elementor.com/academy/how-to-use-the-color-sampler/
+
+How to use template library
+https://elementor.com/academy/how-to-use-the-template-library/
+
+Price table
+https://elementor.com/academy/how-to-make-price-tables-in-wordpress-with-elementor/
+
+
+
+
+
+
+
+Elementor Pro
+
+Popup
+https://elementor.com/academy/how-to-create-an-age-gate-popup-advanced-pro/
+
+Horizontal Scroll Website
+https://elementor.com/academy/amazing-layouts-with-svg-lottie-motion-effects/
+
+Breadcrumbs
+https://elementor.com/academy/how-to-add-breadcrumbs-to-your-wordpress-site/
+
+
+
+
+
+Hold 
+
+Elementor kits library
+https://elementor.com/academy/the-kit-library/
+
+Addobe typekit
+https://elementor.com/academy/custom-fonts-how-to-add-adobe-typekit-to-elementor/
+
+
+
+Woo Commerce 
+
+-- https://elementor.com/academy/how-to-use-dynamic-woocommerce-tags-pro/
+-- https://elementor.com/academy/how-to-display-woocommerce-products-with-the-wc-products-widget-in-elementor/
+
+
+
+Form Campaign Integration
+
+Conertkit 
+https://elementor.com/academy/convertkit-elementor-integration/
+
+Active Campaign from form.
+https://elementor.com/academy/activecampaign-elementor-integration/
+
+Add mailchimp to wordpress
+https://elementor.com/academy/how-to-connect-wordpress-to-mailchimp-with-elementor/
+
+GetResponse Campaign
+https://elementor.com/academy/getresponse-elementor-integration/
+
+
+
+For Slider
+Touch Fashion Slider for Elementor
+
+
+

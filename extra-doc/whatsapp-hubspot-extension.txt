@@ -1,0 +1,114 @@
+		Total Functions are Declared :
+
+
+	-- content.js
+
+
+1 - startup() 
+
+2 - setbuttonsall()	
+
+3 - validateEmail()
+
+4 - loginmodal()
+
+5 - forgotpassword()
+
+6 - addmaterialbutton()
+
+7 - resetmaterialbutton()
+
+8 - importwhatschat()
+
+9 - addlistnertochats()
+
+10 - activateWebbtn()
+
+11 - activateWebbtnMissing()
+
+12 - showaddticket()
+
+13 - assignmentmodal()
+
+14 - wa_send_assign_request()
+
+15 - createticketmodal()
+
+17 - wa_submit_ticket()
+
+18 - cticketresponse()
+
+19 - addexistingticketmodal()
+
+20 - wa_update_ticket()
+
+21 - assigneactivated()
+
+22 - addusercheck()
+
+23 - addusercheckfn()
+
+24 - removeusercheck()
+
+25 - assigneremoved()
+
+26 - SavePhoto()
+
+27 - getChatDivs()
+
+28 - chatName()
+
+29 - chatMessage()
+
+30 - chatImageURL()
+
+31 - chatDate()
+
+32 - getAllChats()
+
+33 - getAllChatsAsJson()
+
+34 - selectChatWithName()
+
+35 - getAllCurrentlyShowingMessagesAsJson()
+
+36 - messageIsOwn()
+
+37 - filterMessageFromLeaf()
+
+38 - childrenOf()
+
+39 - allVisibleMessages()
+
+40 - trim()
+
+41 - rgba2hex()
+
+42 - rgba2alpha()
+
+43 - blobToBase64()
+
+44 - blobCallback()
+
+45 - sleep()
+
+46 - getCurrentChatState()
+
+47 - loadMoreChat()
+
+48 - stopLoadingChat()
+
+49 - logChatOnServer()
+
+50 - cancelChatBackup()
+
+51 - showChatBackupModal()
+
+52 - cancelChatBackup()
+
+
+
+
+- should load the Extension with all js files ES6.
+
+- ES6 https://youtu.be/JTcjSvFptEM

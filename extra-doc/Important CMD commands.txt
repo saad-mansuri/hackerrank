@@ -1,0 +1,35 @@
+My Global Version 
+
+
+- No. of Node Version Installed
+
+    14.19.0
+    14.17.5
+  * 14.0.0 (Currently using 64-bit executable)
+    12.20.0
+    12.0.0
+    10.17.0
+    10.16.3
+    10.16.0
+    8.16.0
+
+- Node  :  14.0.0	( Current Using )
+
+
+
+Gulp Required Commands  : 
+
+- npm install gulp-cli -g [ gulp-cli install as global ]
+- npm intall gulp -D 
+- touch gulpfile.js
+- gulp --help
+
+
+--  npm rm gulp -g
+
+then init the npm and create the package.json file 
+
+- npm init
+
+1. npm init 
+2. npm install gulp --save-dev 

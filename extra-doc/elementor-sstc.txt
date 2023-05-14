@@ -1,0 +1,855 @@
+Download Brochure :- 
+
+<script>
+	var $ = jQuery;
+	$('#get-brochure-accounting .elementor-button-link').on('click',function(){
+		var text1 = 'Accounting';
+		$('#select_study_programes option').filter(function() {
+			return $(this).text() === text1;
+		}).prop('selected', true);
+	});
+	$('#get-brochure-business .elementor-button-link').on('click',function(){
+		var text1 = 'Business';
+		$('#select_study_programes option').filter(function() {
+			return $(this).text() === text1;
+		}).prop('selected', true);
+	});
+	$('#get-brochure-hospitality .elementor-button-link').on('click',function(){
+		var text1 = 'Hospitality';
+		$('#select_study_programes option').filter(function() {
+			return $(this).text() === text1;
+		}).prop('selected', true);
+	});
+	
+	$('#get-brochure-technology .elementor-button-link').on('click',function(){
+		var text1 = 'Download All Programs';
+		$('#select_study_programes option').filter(function() {
+			return $(this).text() === text1;
+		}).prop('selected', true);
+	});
+	
+	 document.addEventListener( 'wpcf7mailsent', function( event ) {
+		 if(event.detail.inputs[3].value ==='Accounting'){ 
+			 $('#get-program-study-download-pdf').attr({target: '_blank', href : '/wp-content/uploads/2022/11/Accounting-_-SSTC-Institute.pdf', download: 'Accounting'});
+			 $('#get-program-study-download-pdf')[0].click();
+		 }
+		 if(event.detail.inputs[3].value === 'Business'){ 
+			 $('#get-program-study-download-pdf').attr({target: '_blank', href : 'wp-content/uploads/2022/11/Pearson-BTEC-_-SSTC-Institute.pdf', download: 'Business'});
+			 $('#get-program-study-download-pdf')[0].click();
+		 }
+		 if(event.detail.inputs[3].value === 'Hospitality'){ 
+			 $('#get-program-study-download-pdf').attr({target: '_blank', href : '/wp-content/uploads/2022/11/Hospitality-_-SSTC-Institute.pdf', download: 'Hospitality'});
+			 $('#get-program-study-download-pdf')[0].click();
+		 }
+		 if(event.detail.inputs[3].value === 'Download All Programs'){ 
+			 $('#get-program-study-download-pdf').attr({target: '_blank', href : 'wp-content/uploads/2022/12/Infinitech-Academy.zip', download: 'Download-All'});
+			 $('#get-program-study-download-pdf')[0].click();
+		 }
+  }, true );
+	
+	$('#select_study_programes option:first-child').attr('disabled', true)
+	$('#select_study_programes option:first-child').attr('selected', true)
+	
+</script>
+
+
+
+Custom JS Common :--
+
+<script>
+var $ = jQuery;
+	
+	$('.menu-item').on('click',function (e) {
+		        e.preventDefault();
+		 $('.boostify-menu-sidebar').removeClass('show');
+		$('.boostify-overlay').removeClass('show');
+	});
+	
+	$(document).ready(function(){
+		$('img').removeAttr('title');	
+		
+		let btnSubmit = $('.wpcf7-submit');
+		let blurValidation = $('.blur-validation');
+		
+		btnDisabled();
+		function btnDisabled(){
+			btnSubmit.addClass('btn-disabled');
+			btnSubmit.attr('disabled', true);
+		}
+		function btnEnabled(){
+			btnSubmit.removeClass('btn-disabled');
+			btnSubmit.removeAttr('disabled', true);
+		}
+		blurValidation.blur(function(){
+			checkForm();
+		});
+			blurValidation.keyup(function(){
+			checkForm();
+		});
+		
+// 		blurValidation.onfocus = function() {
+// 			checkForm();
+// 		};
+		
+// 		blurValidation.focusin(function(){
+// 			console.log('focus done');
+// 			checkForm();
+// 		});
+		
+		$('select').on('change', function(){
+			checkForm();
+		});
+		
+		btnSubmit.on('click', function(){
+			checkForm();
+			setTimeout(function(){
+ 				btnDisabled();}, 2000);
+		});
+		
+		function checkForm(){
+			if($('form').valid() == true){
+				btnEnabled();
+			}else{
+				btnDisabled();
+			}
+		}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+// 		console.log($('form').valid());
+		
+// 		let blurValidation = $('.blur-validation')
+// 		let inputName = $('#contactName');
+// 		let inputEmail = $('#contactEmail');
+// 		let inputNumber = $('#contactNumber');
+// 		let inputSelect = $('#select_study_programes');
+// 		let btnSubmit = $('.wpcf7-submit');
+		
+// // 		console.log(inputEmail, inputNumber, inputSelect)
+
+		
+// 			btnSubmit.attr('disabled', true);
+// 			if(btnSubmit.attr('disabled', true)){
+// 				btnSubmit.addClass('btn-disabled');
+// 			}			
+		
+// 		btnSubmit.on('click', function(){
+// 			FormCheck();
+// 		});
+		
+// // 		$('select').on('change', function(){
+// // 			FormCheck();
+// // 		});
+		
+// // 		$('select').on('change', function(){
+// // 				btnSubmit.removeAttr('disabled');
+// // 				btnSubmit.removeClass('btn-disabled');
+// // 			});
+// // 		function btnEnabled(){
+// 			blurValidation.blur(function(){
+// 				FormCheck()
+// // 				btnSubmit.removeAttr('disabled');
+// // 				btnSubmit.removeClass('btn-disabled');
+// 			});
+// // 		}
+// 		FormCheck();
+// 		function FormCheck(){
+// // 			if($('form').valid() == true){
+// // 				console.log('valid valid');
+// // 			}else{
+// // 				console.log('valid not valid');
+// // // 				btnEnabled()
+// // // 				alert();
+// // 			}
+// 			if($('form').validate() === true){
+// // 				console.log('form validated');
+// 				btnSubmit.removeAttr('disabled');
+// 				btnSubmit.removeClass('btn-disabled');
+// // 				btnEnabled();
+// 			}else{				
+// // 				btnDisabled();
+// 				console.log('form not validated');
+// // 				alert('form not valid');
+// 			}
+// 		}
+		
+		
+// 		formValidator();
+// 		$('select').on('change', function(){
+// 			formValidator();
+// 		});
+// 		function formValidator(){
+// 			if($('form').valid() === true){
+// // 				alert();
+// 				blurVal.blur(function(){
+// 					btnSubmit.removeAttr('disabled');
+// 					btnSubmit.removeClass('btn-disabled');
+// 				});
+// 				$('select').on('change', function(){
+// 					btnSubmit.removeAttr('disabled');
+// 					btnSubmit.removeClass('btn-disabled');
+// 				});
+// 			}else{
+// 				btnSubmit.attr('disabled', true);
+// 				btnSubmit.addClass('btn-disabled');
+// // 				console.log('function not called yet');
+// 				$('#contactName-error').css('display', 'none');
+// 				$('#contactEmail-error').css('display', 'none');
+// 				$('#contactNumber-error').css('display', 'none');
+// 				$('#select_study_programes-error').css('display', 'none');
+// 			}
+// 		}
+// 		btnSubmit.on('click', function(){
+// 			formValidator();
+// 		});
+		
+		
+		
+		
+		
+		
+		
+		
+// 		function blurValidation(){
+// 			blurVal.blur(function(){
+// 				btnSubmit.removeAttr('disabled');
+// 				btnSubmit.removeClass('btn-disabled');
+// 			});
+// 		}
+// 		
+// 		if($('form').valid() === false){
+// 			blurVal.blur(function(){
+// 					btnSubmit.removeAttr('disabled');
+// 					btnSubmit.removeClass('btn-disabled');
+// 			});
+// 			$('select').on('change', function(){
+// 				btnSubmit.removeAttr('disabled');
+// 				btnSubmit.removeClass('btn-disabled');
+// 			});
+// 		}else{
+// 			alert('form still not valid');
+// 		}
+		
+// 		btnSubmit.on('click', function(){
+			
+// 		})
+// 		blurVal.blur(function(){
+// 					btnSubmit.removeAttr('disabled');
+// 					btnSubmit.removeClass('btn-disabled');
+// 			});
+// 		$('select').on('change', function(){
+// 			btnSubmit.removeAttr('disabled');
+// 			btnSubmit.removeClass('btn-disabled');
+// 		});
+		
+// 		inputEmail.blur(function(){
+// 			btnSubmit.removeAttr('disabled');
+// 			btnSubmit.removeClass('btn-disabled');
+// 		}); 
+// 		inputNumber.blur(function(){
+// 			btnSubmit.removeAttr('disabled');
+// 			btnSubmit.removeClass('btn-disabled');
+// 		});
+	
+// 		$("form").keyup(function(){
+// 			 btnSubmit.removeAttr('disabled');
+// 			btnSubmit.removeClass('btn-disabled');
+// 		});
+// 		if($('.wpcf7-submit').attr('disabled', true)){
+// 			$('.wpcf7-submit').addClass('btn-disabled');
+// 		}else if($('.wpcf7-submit').attr('disabled', false)){
+// 			$('.wpcf7-submit').removeClass('btn-disabled"');
+// 		}
+		
+// 		btnSubmit.attr('disabled', true);
+//     inputName.change(function(){
+//         if($(txtName.val !== ''){
+//             btnSubmit.removeAttr('disabled');
+//         }
+//     });
+		
+		
+// 		if(txtName !== ' '){
+// 			$('.wpcf7-submit').attr('disabled', false);
+// 		}
+	});
+	
+</script>
+
+<style>
+	.btn-disabled{
+		background-color:grey !important;
+		border:none;
+		opacity:0.7;
+	}
+</style>
+
+
+Study Program JS for MOBILE :--
+
+
+<script>
+// 	console.log("hello Javascript");
+
+// $('#JscardHospitality-slider').on('click', function () {
+// 	alert('thing is worked');
+// })
+	
+// 	$('#JscardAccounting-slider').on('click', function () {
+//     $('#JscardAccounting-section-slider').css("display", "block");
+//     $('#JscardBussiness-section-slider').css("display", "none");
+//     $('#JscardHospitality-section-slider').css("display", "none");
+// })
+
+// $('#JscardBusiness-slider').on('click', function () {
+//     $('#JscardAccounting-section-slider').css("display", "none");
+//     $('#JscardBussiness-section-slider').css("display", "block");
+//     $('#JscardHospitality-section-slider').css("display", "none");
+// })
+
+// $('#JscardHospitality-slider').on('click', function () {
+//     $('#JscardAccounting-section-slider').css("display", "none");
+//     $('#JscardBussiness-section-slider').css("display", "none");
+//     $('#JscardHospitality-section-slider').css("display", "block");
+// })
+// 	var $ = jQuery;
+	
+// 	$('.carousel-arrow').on('click', function(e){
+// 		let slickSlider = $('.slick-track')[0]; 
+// 		console.log(slickSlider)
+// 	})
+// 	console.log($('.slick-track')[0])
+</script>
+
+<!-- Middle Card Click Event ID -- #JscardAccounting -->
+<!-- Middle Section -- #JscardAccounting-section-->
+
+<!-- Middle Card Click Event ID -- #JscardBusiness -->
+<!-- Middle Section -- #JscardBussiness-section-->
+
+<!-- Last section Click Event ID -- #JscardHospitality -->
+<!-- Middle Section -- #JscardHospitality-section-->
+
+
+
+Study Program JS :--
+
+<script>
+// 	console.log("hello Javascript");
+
+let $ = jQuery
+// JsAccounting()
+// function JsAccounting(){
+// 		$('#JscardAccounting').on('click', function(){
+// 		$('#JscardAccounting-section').css("display", "block");
+// 	})
+// }
+	
+	
+	$('#JscardAccounting').on('click', function () {
+    $('#JscardAccounting-section').slideToggle('slow');
+    $('#JscardBussiness-section').css("display", "none");
+    $('#JscardHospitality-section').css("display", "none");
+		$('#JscardTechnology-section').css("display", "none");
+})
+
+$('#JscardBusiness').on('click', function () {
+    $('#JscardAccounting-section').css("display", "none");
+    $('#JscardBussiness-section').slideToggle('slow');
+    $('#JscardHospitality-section').css("display", "none");
+	$('#JscardTechnology-section').css("display", "none");
+})
+
+$('#JscardHospitality').on('click', function () {
+    $('#JscardAccounting-section').css("display", "none");
+    $('#JscardBussiness-section').css("display", "none");
+    $('#JscardHospitality-section').slideToggle('slow');
+		$('#JscardTechnology-section').css("display", "none");
+})
+	
+	$('#JscardTechnology').on('click', function () {
+    $('#JscardAccounting-section').css("display", "none");
+    $('#JscardBussiness-section').css("display", "none");
+		$('#JscardHospitality-section ').css("display", "none");
+    $('#JscardTechnology-section').slideToggle('slow');
+})
+
+$('#JscardAccounting-slider').on('click', function () {
+    $('#JscardAccounting-section-slider').slideToggle('slow');
+    $('#JscardBussiness-section-slider').css("display", "none");
+    $('#JscardHospitality-section-slider').css("display", "none");
+		$('#JscardTechnology-section-slider').css("display", "none");
+})
+
+$('#JscardBusiness-slider').on('click', function () {
+    $('#JscardAccounting-section-slider').css("display", "none");
+    $('#JscardBussiness-section-slider').slideToggle('slow');
+    $('#JscardHospitality-section-slider').css("display", "none");
+	  $('#JscardTechnology-section-slider').css("display", "none");
+})
+
+$('#JscardHospitality-slider').on('click', function () {
+    $('#JscardAccounting-section-slider').css("display", "none");
+    $('#JscardBussiness-section-slider').css("display", "none");
+    $('#JscardHospitality-section-slider').slideToggle('slow');
+		$('#JscardTechnology-section-slider').css("display", "none");
+})
+	
+$('#JscardTechnology-slider').on('click', function () {
+    $('#JscardAccounting-section-slider').css("display", "none");
+    $('#JscardBussiness-section-slider').css("display", "none");
+    $('#JscardHospitality-section-slider').css("display", "none");
+		$('#JscardTechnology-section-slider').slideToggle('slow');
+})
+	
+	
+</script>
+
+<!-- Middle Card Click Event ID -- #JscardAccounting -->
+<!-- Middle Section -- #JscardAccounting-section-->
+
+<!-- Middle Card Click Event ID -- #JscardBusiness -->
+<!-- Middle Section -- #JscardBussiness-section-->
+
+<!-- Last section Click Event ID -- #JscardHospitality -->
+<!-- Middle Section -- #JscardHospitality-section-->
+
+
+
+
+Study Program CSS :--
+<style>
+	
+	#JscardAccounting-section, #JscardBussiness-section, #JscardHospitality-section, #JscardTechnology-section, #JscardAccounting-section-slider, #JscardBussiness-section-slider, #JscardHospitality-section-slider, #JscardTechnology-section-slider{
+		display:none;
+	}
+	
+
+/* 	@media (min-width:768px){
+		#JscardAccounting-section-slider, #JscardBussiness-section-slider, #JscardHospitality-section-slider, #JscardTechnology-section-slider{
+			display:none;
+		}
+	} */
+	
+	.study-card-sec__right-col a{
+		text-decoration:none;
+	}
+	.BTEC-level .BTEC-level__left-col .elementor-widget-wrap.elementor-element-populated {
+		padding:0 !important;
+	}
+	@media (min-width:768px) and (max-width:1024px){
+		.study-card-sec-slider__wraps section{
+			margin:20px;
+		}
+	}
+	
+	#JscardAccounting, #JscardBusiness, #JscardHospitality, #JscardTechnology{
+		cursor:pointer;
+	}
+	
+	.study-card-sec__inner-right-col .elementor-widget-wrap.elementor-element-populated{
+		padding-left:0 !important;
+	}
+	
+	.study-card-sec__main-ul-title{
+		margin-bottom:4px !important;
+	}
+	.study-card-sec__main-ul-title p {
+		margin:0;
+	}
+	
+	.study-card-sec__our-partner-left-col .elementor-widget-wrap.elementor-element-populated{
+		padding-left:0 !important;
+	}
+	.study-card-sec__suitable-course-right-col p{
+		margin-bottom:0;
+	}
+	.study-card-sec__left-col .elementor-widget-wrap.elementor-element-populated{
+		background-size:100% 100% !important;
+	}
+	
+	.btn-get-brochure a{
+		text-decoration:none;
+	}
+	
+	.study-card-sec-slider__wrapper .carousel-arrow.carousel-next{
+		right:0 !important;
+	}
+	.study-card-sec-slider__wrapper .carousel-arrow.carousel-prev{
+		left:0 !important;
+	}
+	.study-program__cards .elementor-container.elementor-column-gap-default{
+		justify-content:space-between;
+	}
+	.study-program__cards .elementor-column.elementor-col-25.study-program__card-cols{
+		width:23%;
+	}
+	
+	@media (max-width:767px){
+		#JscardAccounting-slider .elementor-widget-wrap.elementor-element-populated{
+			margin:0;
+		}
+	}
+</style>
+
+
+
+Custom Css :---
+
+
+
+<style>
+
+/* Dont touch this	 */
+	.elementor-widget-wrap.elementor-element-populated{
+		padding:0 15px !important;
+	}
+/* ----- */
+	
+	.main-header .main-header__sub-menus a{
+		text-transform:inherit;
+	}
+	
+	.top-mini-header .top-mini-header__contact-sec ul{
+		list-style:none;
+	}
+	.top-mini-header .top-mini-header__social-icons a{
+		font-size:18px;
+	}
+	
+	.main-header .main-header__logo-col .elementor-widget-container{
+		height	:51px;
+	}
+	
+	.hero-slider__innder-sec .elementor-widget-wrap.elementor-element-populated{
+		max-width:650px;
+	}
+	
+	.hero-section-carousel .carousel-prev{
+		left:1% !important;
+	}
+	.hero-section-carousel .carousel-next{
+		right:1% !important;
+	}
+	.footer__icons{
+		margin-bottom:25px;
+	}
+	.footer .footer__icons a{
+		padding:0.888888888em !important;
+		font-size: 1em;
+	}
+	.footer .footer__icons a svg{
+		font-size:1.555555555em;
+	}
+	.footer__contact-info ul{
+		list-style:none;
+		justify-content:center;
+	}
+	.footer__address p{
+		margin-bottom: 7px;
+	}
+	.footer__contact-info ul li svg, .footer__contact-info ul li span, .top-mini-header__contact-sec ul li svg, .top-mini-header__contact-sec ul li span{
+		vertical-align:middle;
+	}
+	.home-contact .home-contact__content-col .elementor-widget-wrap.elementor-element-populated{
+		max-width:530px;
+	}
+	@media (min-width:768px) and  (max-width:1024px){
+		.footer__logo-left-col, .footer__logo-right-col{
+			width:45% !important;
+		}
+	}
+	@media (max-width:767px){
+		.footer .footer__logos .elementor-column{
+			width:100% !important;
+		}
+		.footer__logos .footer__logo-left-col{
+			margin-bottom:25px;
+		}
+		.footer__contact-info ul li:first-child{
+			margin-bottom:10px;
+		}
+		.our-testimonials .elementor-main-swiper{
+			width:100% !important;	
+		}
+		.our-testimonials .swiper-slide {
+			padding: 0 !important; 
+		}
+		.our-testimonials .elementor-swiper-button-prev{
+			left:-10% !important;
+		}
+		.our-testimonials .elementor-swiper-button-next{
+			right:-10% !important;
+		}
+	}
+/* 	.hero-section-carousel .elementor-widget-wrap.elementor-element-populated{
+		padding:0!important;
+	} */
+	
+/* 	.footer__logo-right-col{
+		width:45%;
+	} */
+	
+	.study-program__card-cols .elementor-widget-wrap.elementor-element-populated{
+		padding-top:2.8em !important;
+		padding-bottom:2.5em !important;
+		background-size:100% 100% !important;
+	}
+	@media (min-width:768px) and (max-width:1024px){
+		.study-program__card-cols .elementor-widget-wrap.elementor-element-populated{
+			padding-top:1.8em !important;
+			padding-bottom:1.5em !important;
+		}
+		.study-program__card-view-btn span{
+			font-size:15px !important;
+		}
+	}
+	
+/* 	.boostify-header--default.elementor-section{
+		height:101px;
+	} */
+	
+	.boostify-menu-sidebar .logo-sidebar img{
+		width:175px;
+	}
+	.main-header__sub-menus ul.boostify-menu > li:last-child {
+		background-color:#FD9F13;
+		border-radius:4px;
+/* 		padding:0.6112em 1.222222222em; */
+		margin-left:20px;
+	}
+	.main-header__sub-menus ul.boostify-menu > li:last-child a, .boostify-menu-sidebar ul.boostify-dropdown-menu > li:last-child a {
+		color:#ffffff !important;
+		padding:0.6112em 1.222222222em !important;
+		font-size:1em !important;
+		line-height:22px !important;
+		font-weight:700 !important;
+		text-decoration:none;
+		border:none;
+	}
+	.boostify-menu-sidebar ul.boostify-dropdown-menu > li:last-child a {
+		padding:0em !important;
+	}
+	.boostify-menu-sidebar ul.boostify-dropdown-menu > li:last-child {
+		background-color:#FD9F13;
+		padding:0.8112em 0.8222222222em !important;
+		border-radius:8px;
+		max-width:6.8em;
+		margin-top:10px;
+	}
+	#hero-slider-sec .carousel-arrow.carousel-prev.slick-arrow{
+		color: #ECECEC;
+	}
+/* 	#hero-slider-sec > .elementor-widget-wrap.elementor-element-populated{
+		padding:0 !important;
+	} */
+/* 	.hero-slider .elementor-widget-wrap.elementor-element-populated{
+		padding:0;
+	} */
+	.study-card-sec-slider .premium-carousel-wrapper a.carousel-arrow, .study-card-sec-slider .premium-carousel-wrapper a.ver-carousel-arrow{
+		z-index:9 !important;
+	}
+	.page-content{
+		padding-top: 2.1111111111em;
+	}
+	.main-header{
+		z-index:9999 !important;
+	}
+	.hero-section-carousel .elementor-widget-wrap.elementor-element-populated{
+		padding:0 !important;
+	}
+	.hero-slider .elementor-widget-wrap.elementor-element-populated{
+		padding:0 15px !important;
+	}
+	@media (max-width:767px){
+		.eael-ext-scroll-to-top-wrap .eael-ext-scroll-to-top-button{
+			bottom: 150px;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+		}
+	}
+	
+	#testimonial .elementor-testimonial__text, #testimonial .elementor-testimonial__name, #testimonial .elementor-testimonial__title{
+		font-style:normal;
+	}
+	
+	
+</style>
+
+
+
+Font Family Load ::---
+<style>
+	@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('PlusJakartaSans-Regular.eot');
+    src: url('PlusJakartaSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PlusJakartaSans-Regular.woff2') format('woff2'),
+        url('PlusJakartaSans-Regular.woff') format('woff'),
+        url('PlusJakartaSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+Contact from 7 [contact-form-7 id="547" title="Contact form 1"] :- 
+
+
+<div class="contact-form7">
+
+<div class="contact-form7__wrapper">
+ <label class="contact-form7__label-parent">Name <span>*</span>
+    [text* your-name class:contact-name autocomplete:off class:blur-validation id:contactName placeholder "Your name"] </label>
+<label class="contact-form7__label-parent"> Email <span>*</span>
+    [email* your-email class:contact-email autocomplete:off class:blur-validation id:contactEmail placeholder "Your email"] </label>
+</div>
+<div class="contact-form7__wrapper contact-form7__wrap">
+ <label class="contact-form7__label-parent"> Phone Number <span>*</span>
+   [tel* tel-360 class:contact-number minlength:8 maxlength:10 class:blur-validation id:contactNumber autocomplete:off class:digits placeholder "Your phone number"]</label>
+<label class="contact-form7__label-parent"> Select Program <span>*</span>[select* menu-168 class:blur-validation id:select_study_programes autocomplete:off "Select Program" "Accounting" "Business" "Hospitality" "Download All Programs"]
+</label>
+</div>
+<div class="contact-form7__wrapper">
+<label class="contact-form7__label-textarea"> Any Enquiries<span class="label-optional">(optional)</span>
+    [textarea your-message autocomplete:off id:contactMessage placeholder "Your message"] </label>
+</div>
+[submit "Submit" class:cr7-btn-submit]
+<a id="get-program-study-download-pdf"> </a>
+</div>
+
+
+<style>
+ .contact-form7{
+ width:100%;
+}
+.contact-form7__label-textarea span.label-optional{font-weight:400; color:#000000;}
+.contact-form7 .contact-form7__wrapper{
+ display:flex; 
+ justify-content: space-between;
+margin-bottom:5px;
+}
+ .contact-form7__label-parent{
+  width:48%;
+}
+.contact-form7 input[type=text], input[type=email], input[type=tel], select{
+ background-color:#FFCD57;
+height:48px;
+padding: 11px 20px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+font-family:"BasierCircle-Regular", Sans-serif;
+outline:none;
+border: none;
+}
+.contact-form7 input[type=text]:focus, .contact-form7 input[type=email]:focus, .contact-form7 input[type=tel]:focus, 
+.contact-form7 select:focus, .contact-form7 textarea{
+outline:none;
+border: none;
+}
+
+::placeholder { / Chrome, Firefox, Opera, Safari 10.1+ /
+  color: red !important;
+  opacity: 1; / Firefox /
+}
+.contact-form7 .contact-form7__label-textarea{
+width:100%;
+}
+.contact-form7 textarea{
+ background-color:#FFCD57;
+}
+textarea:placeholder {
+    color: #000 !important;
+    opacity: 1 !important;
+}
+.contact-form7__wrap{
+ margin-bottom:-16px !important;
+}
+.contact-form7 span{color:#B32025; font-weight:bold;}
+.contact-form7__wrapper label{
+font-family: 'Plus Jakarta Sans', Sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 24px;
+margin-bottom:4px;
+margin-top:4px;color:#333333;
+}
+.wpcf7 form .wpcf7-response-output{margin: 1em 0 1em;
+    padding: 0;
+    border: none}
+.contact-form7 input[type="submit"]:focus{
+ outline:none;
+}
+.contact-form7 .wpcf7-submit{
+margin-top: 2.22222222222em}
+@media (max-width:767px){
+ .contact-form7__wrapper{
+display:block !important}
+.contact-form7__label-parent{width:100%; !important }
+}
+.wpcf7-not-valid-tip{display:none}
+.wpcf7-form label.error{
+ font-size:15px;
+color:#B32025;
+}
+#contactNumber-error, #select_study_programes-error{margin-bottom:15px;}
+
+</style>
+
+<script>
+document.getElementsByClassName('wpcf7-submit')[0].value = 'Submit';
+var $ = jQuery;
+$("input.wpcf7-form-control, textarea.wpcf7-form-control").attr("autocomplete", "negative");
+</script>
+
+
+
+
+6 month Full-Time
+15 guided learning hours per week
+S$8,849.25 (International Students)
+S$ 6,066.90 (Local Students)
+
+
+
+6 month Full-Time
+15 guided learning hours per week
+S$ 8,849.25 (International Students)
+S$ 6,066.90 (Local Students)
+
+
+8 months Full-Time
+15 guided learning hours per week
+S$ 12,075.08 (International Students)
+S$ 8,636.63 (Local Students)

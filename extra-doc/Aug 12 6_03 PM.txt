@@ -1,0 +1,97 @@
+
+Program Number 1 :
+
+Total Sum of an Array and finding the average
+
+
+'use strict'
+let arr = [10,20,30,40,50,60];
+let arrLeng = arr.length
+let arrSum = 0
+
+console.log(arr);
+for(var i=0; i<arr.length; i++){
+    // console.log(arr[i])
+    arrSum += arr[i]
+}
+
+console.log("Total Sum of an Array : " + arrSum);
+console.log("Total Length of an Araray : " + arrLeng);
+console.log("Average Value of an Array : " + arrSum/arrLeng);
+
+
+// Another way 
+console.log(arr.reduce(myArrFunc));
+function  myArrFunc(total, num){
+    return total + num
+}
+
+
+/**
+ * Reduce Example
+ */
+
+const str = ["JavaScript ", "is ", "fun."]
+let strReduce = str.reduce(strReduceFunc)
+function strReduceFunc(preValue, nextValue){
+    return preValue + nextValue
+}
+console.log(strReduce);
+// console.log(str);
+
+
+let arrR = [10,20,30]
+let useReduce = arrR.reduce(function(preValue, nextValue){
+    return preValue + nextValue 
+})
+console.log(useReduce);
+
+
+/**
+ * 
+ * 
+ * Iteration
+ * 
+ * 
+ */
+
+================================================
+
+Program Number 2 :
+
+Finding Odd and Even values from Array
+
+'use strict'
+
+let arr = [10,20,30,40,50,60,1,2,111];
+console.log(arr);
+let arrEvenVal = []
+let arrOddVal = []
+
+for(var i=0; i<arr.length; i++){
+    // console.log(arr[i]);
+    if(i % 2 == 1){
+        console.log("Numbers are ODD : "+ i +  " " + arr[i]);
+        arrEvenVal.push(arr[i]) 
+    }else{
+        console.log("Numbers are EVEN : " + i +  " " + arr[i]);
+        arrOddVal.push(arr[i])
+    }
+}
+console.log(arrEvenVal,  arrOddVal);
+
+
+========================================================
+
+Program Number 3 :
+
+Array Reverse Printing
+
+'use strict'
+
+let arr = [10,20,30,40,50,60,1,2,111];
+
+for(var i=arr.length-1; i>=0; i--){
+    console.log(arr[i]);
+}
+

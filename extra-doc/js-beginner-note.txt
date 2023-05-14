@@ -1,0 +1,32 @@
+JAVASCRIPT : 
+
+Https : tcp/ip
+
+js Events : 
+
+Cookies - Session : state and stateless
+
+Small Logical Program :
+
+Hash - Indexing : 
+
+DOM : 
+
+Browser Rendering : 
+
+Bubbling - Capturing :
+
+Caching : server side - client side
+
+object - property
+
+for - for in :
+hasOwnProperty() : 
+
+Prototype - inheritance - hoisted - proxy    
+
+this keyword, curront scope
+
+Webpack -- babel 
+
+closure -- print - me variable lite 

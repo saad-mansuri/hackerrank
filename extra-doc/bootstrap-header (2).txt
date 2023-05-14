@@ -1,0 +1,70 @@
+<!-- <section class="mini-header">
+          <div class="container">
+               <div class="row justify-content-between">
+                    <div class="col-md-6 col-lg-4 d-flex align-items-center">
+                         <p class="mini-header__title mini-header__title_border">For Individual</p>
+                         <p class="mini-header__title mini-header__title_color">About CGS-CIMB</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mini-header__right-col text-right">   
+                         <a href="#" class="mini-header__icon-content d-flex align-items-center">
+                              <img src="assets/images/location-icon.svg" alt="International">
+                              <p class="">International</p>
+                         </a>
+                         <a href="#" class="mini-header__icon-content d-flex align-items-center">
+                              <img src="assets/images/languages.svg" alt="Languages">
+                              <p class="">EN</p>
+                         </a>
+                         <a href="#" class="mini-header__icon-content d-flex align-items-center">
+                              <img src="assets/images/search.svg" alt="S  earch">
+                              
+                         </a>
+                    </div>
+               </div>
+          </div>
+     </section> -->
+
+     <!-- <section class="main-header">
+          <div class="container">  
+               <nav class="navbar sticky-top navbar-expand-lg navbar-light main-header__cust-navbar">
+                    <a class="navbar-brand" href="#">
+                         <img src="assets/images/CGSCIMB-Logo.png" alt="" class="main-header__logo-img">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                         <ul class="navbar-nav main-header__navbar-nav  m-auto">
+                              <li class="nav-item main-header__nav-item active">
+                                   <a class="nav-link main-header__nav-link" href="#">Product & Services <span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="nav-item main-header__nav-item">
+                                   <a class="nav-link main-header__nav-link" href="#">Platform & Tools</a>
+                              </li>
+                              <li class="nav-item dropdown main-header__nav-item">
+                                   <a class="nav-link dropdown-toggle main-header__nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Sustainability
+                                   </a>
+                                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Subcategory 1</a>
+                                        <a class="dropdown-item" href="#">Subcategory 2</a>
+                                        <a class="dropdown-item" href="#">Subcategory 3</a>
+                                   </div>
+                              </li>
+                              <li class="nav-item main-header__nav-item">
+                                   <a class="nav-link main-header__nav-link" href="#">Discover</a>
+                              </li>
+                         </ul>
+                         <ul class="navbar-nav main-header__navbar-nav">
+                              <li class="nav-item main-header__nav-item">
+                                   <a class="nav-link main-header__nav-link" href="#">Apply Online</a>
+                              </li>
+                              <li class="nav-item main-header__nav-item">
+                                   <a class="nav-link main-header__nav-link" href="#">Log In</a>
+                              </li>
+                         </ul>
+                    </div>
+               </nav>
+          </div>
+     </section> -->

@@ -1,0 +1,14 @@
+
+1. Where can we write js in elementor.
+2. Card should be dynamic.
+3. Component create with html code in .html or .php then how we can used in elementor.
+4. Can possible to import any packages. ex. bootstrap, jquery - any 3rd party library.
+5. Import gulp for any custome css.
+6. Maintain gitlab
+7. Manage history
+
+
+
+
+plugins :--
+Unlimited elements : for using custome html and css and js.

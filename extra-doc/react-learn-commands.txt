@@ -1,0 +1,4 @@
+Create new React-app :: npx create-react-app appname
+Start App :: npm start
+New Packages Install :: npm i package_name --save
+Install Old Dependencies 
