@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <!-- <script src="hoisting.js"></script> -->
+    <!-- <script src="clousure.js"></script> -->
+    <script src="callback-callbackhell.js"></script>
+    <!-- <script src="spread-operator.js"></script> -->
+    
+    
+    <!-- <script>
+    // const ALLACTION = [
+    //     {
+    //         BASE_URL: {
+    //             "main": "https://wa-hubspot.testground.me"
+    //         }
+    //     },
+    //     {
+    //         URLS: {
+    //             "LOGIN": "/api/login",
+    //             "RESETPASSWORD": "/api/reset-password",
+    //             "LOGOUT": "/api/logout",
+    //             "COMPANY": "/api/companies",
+    //             "TICKETS": "/api/tickets",
+    //             "DEALS": "/api/tickets",
+    //             "CHATBACKUP": "/api/chat-backup"
+    //         }
+    //     },
+    //     {
+    //         REQUEST_ACTIONS: {
+    //             "WA_LOGIN": "walogin",
+    //             "WA_RESETPASSWORD": "waresetpassword",
+    //             "WA_LOGOUT": "walogout",
+    //             "GET_COMPANY": "getcompanies",
+    //             "GET_COMPANYBYGROUP": "getcompanybygroup",
+    //             "GET_TICKETS": "gettickets",
+    //             "GET_DEALS": "getdeals",
+    //             "CREATE_TICKET": "creatticket",
+    //             "UPDATE_TICKET": "updateticket",
+    //             "ADD_NEWCOMPANY": "addnewcompany",
+    //             "CHATBACKUP": "chatbackup"
+    //         }
+    //     }
+    // ];
+
+
+    // // let keys = Object.values(ALLACTION)
+    // // console.log(keys);
+
+    
+    // // // console.log('https://wa-hubspot.testground.me/api/login');
+    // // // console.log(ALLACTION[1].URLS.LOGIN);
+    // ALLACTION.forEach(e => {
+    //     // console.log(e);
+    //     for(let getActionskeys in e){
+    //         var getActionsValues = e[getActionskeys]
+    //         // console.log(getActionsValues);
+    //         for(let x in getActionsValues)
+    //             console.log(getActionsValues[x]);
+    //         // console.log(getActionsValues);
+    //     }
+    //     // console.log(getActionsValues);
+    // })
+
+
+    // var IETMObj = {
+    // "allItems": [{ 
+    //     "sFile": "Test.html",
+    //     "Applicability": [{   // second dimension
+    //                     "ApplicID": "subj_1",
+    //                     "ApplicDisp": "Driving",
+    //                     "Condition": "In rain"
+    //             },{
+    //                     "ApplicID": "subj_2",
+    //                     "ApplicDisp": "Running",
+    //                     "Condition": "Uphill"
+    //             }]
+    //     }]
+    // };
+
+    // var applicability = IETMObj.allItems[0].Applicability;
+    // for (var i = 0; i < applicability.length; i++) {
+    //     console.log(i);
+    //     var obj = applicability[i];
+    //     for (var key in obj){
+    //         var value = obj[key];
+    //         console.log(key + ": " + value);
+    //     }
+    // }
+
+    // var siteInfo = {
+	// "name" : "blogger",
+	// "users" : [
+    //         [ "admins", "1", "2" , "3"],
+    //         [ "editors", "4", "5" , "6"],
+    //     ]
+    // }
+    // for (i in siteInfo .users) 
+    // {
+    //     for (j in siteInfo.users[i]) 
+    //     {
+    //         x = siteInfo.users[i][j];
+    //         console.log(x);
+    //     }
+    // }
+
+    // const courses = {
+    //     java: 10,
+
+    //     javascript: 55,
+
+    //     nodejs: 5,
+
+    //     php: 15
+    // };
+
+    // // convert object to key's array
+
+    // const keys = Object.keys(courses);
+
+    // // print all keys
+
+    // console.log(keys);
+
+    // // [ 'java', 'javascript', 'nodejs', 'php' ]
+
+    // // iterate over object
+
+    // keys.forEach((key, index) => {
+    //     console.log(`${key}: ${courses[key]}`);
+    // });
+
+    const ALLACTION = {    
+        "BASE_URL": "https://wa-hubspot.testground.me",
+        "URLS": {
+            "LOGIN": "/api/login",
+            "RESETPASSWORD": "/api/reset-password",
+            "LOGOUT": "/api/logout",
+            "COMPANY": "/api/companies",
+            "TICKETS": "/api/tickets",
+            "DEALS": "/api/tickets",
+            "CHATBACKUP": "/api/chat-backup"
+        },        
+        "REQUEST_ACTIONS": {
+            "WA_LOGIN   ": "walogin",
+            "WA_RESETPASSWORD": "waresetpassword",
+            "WA_LOGOUT": "walogout",
+            "GET_COMPANY": "getcompanies",
+            "GET_COMPANYBYGROUP": "getcompanybygroup",
+            "GET_TICKETS": "gettickets",
+            "GET_DEALS": "getdeals",
+            "CREATE_TICKET": "creatticket",
+            "UPDATE_TICKET": "updateticket",
+            "ADD_NEWCOMPANY": "addnewcompany",
+            "CHATBACKUP": "chatbackup"
+        }
+    };
+
+    console.log(ALLACTION.BASE_URL + ALLACTION.URLS.LOGIN);
+    </script> -->
+</body>
+</html>

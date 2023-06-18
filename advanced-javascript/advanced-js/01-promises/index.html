@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JS</title>
+</head>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+    <script>
+
+        // let complete = false;
+        // function myPromsie(complete){
+        //     return new Promise((resolve, reject) =>{
+        //         console.log('fething the data, please wait...');
+        //         setTimeout(() => {
+        //             $.get('https://jsonplaceholder.typicode.com/todos/', function(response){
+        //                 resolve(response)
+        //             }).fail(err => {
+        //                 reject('JSON failed to load...')
+        //             })
+        //         }, 2000);
+        //     })
+        // }
+        
+        // let onFulfillment = (result) => {
+        //     console.log(result);
+        // }
+        // let onRejection = (error) =>{
+        //     console.log(error);
+        // }   
+
+        // let myPromsieVal = myPromsie(true).then(onFulfillment).catch(onRejection)
+        
+        // myPromsie(true).catch(onRejection)
+
+        // myPromsie.then(result => {
+        //     console.log(result);
+        // })
+        // myPromsie.catch(error => console.log(error))
+        // console.log(myPromsie);
+
+        // async function asyncFunc(){
+        //     try {
+        //         let resultt = await myPromsie(true).then(onFulfillment).catch(onRejection)
+        //         console.log(resultt);
+        //     }
+        //     catch(error){
+        //         console.log(error);
+        //     }
+        // };
+        // asyncFunc();
+
+        let complete = true
+        let promise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if(complete){
+                    resolve('Promise Resolve')
+                }
+                reject('Promise Rejected')
+            }, 1000)
+        })
+
+        // promise.then(true).catch(err => console.log(err));
+        async function asyncFunc(){
+            let result = await promise;
+            console.log(result);    
+            console.log(`don't wait for result`);
+        }
+        asyncFunc()
+
+    </script>
+</body>
+</html>
